@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.titulo {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #0095ff;
+}
+
+.descripcion {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #adbbcb;
+}
+
+.form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-form {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #90b4ce;
+  color: #000000fe;
+  width: 100%;
+}
+
+.btn-gen {
+  padding: 6px 10px 5px;
+  background-color: #3da9fc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+.btn-gen:hover {
+  background-color: #3d70fc;
+}
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.btn-des {
+  padding: 6px 10px;
+  background-color: #ef4565;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.btn-des:hover {
+  background-color: #b83131;
+}
+
+/* Estilos específicos para el modo oscuro */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  /* Agrega otros estilos específicos para el modo oscuro aquí */
+}
+
+/* Media queries*/
+@media (max-width: 600px) {
+  .form {
+    flex-direction: column;
+  }
+  .input-form {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .form {
+    flex-direction: row;
+  }
+  .input-form {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .btn-gen,
+  .btn-des {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .titulo {
+    font-size: 3rem;
+  }
+  .descripcion {
+    font-size: 1.2rem;
+  }
+  .form {
+    max-width: 500px;
+  }
+  .btn-gen {
+    margin-left: 5px;
+  }
+}
